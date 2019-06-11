@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>模拟系统登录界面</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+{#    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">#}
+    <script src="/static/js/jquery-3.3.1.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/spin.js"></script>
+
+{#    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/scss/bootstrap.min.css" rel="stylesheet">#}
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+       <div class="row">
+          <div class="col-md-3">
+          </div>
+
+          <div class="col-md-6" >
+              <div class="mid">
+                  <br>
+                  <h3 class="text-center">全国执业兽医资格考试计算机模拟系统</h3>
+                  <hr>
+                  <form class="form-horizontal" role="form">
+                      <div class="form-group">
+
+                        <div class="form-group">
+                            <label for="firstname" class="col-sm-2 control-label">手机号</label>
+                            <div class="col-sm-10">
+                                <input id="tele" type="text" class="form-control" placeholder="请输入手机号"/>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="lastname" class="col-sm-2 control-label">密码</label>
+                            <div class="col-sm-10">
+                                <input id="pwd" type="password" class="form-control" placeholder="请输入密码"/>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-8">
+                                <a id="submit" class="btn btn-primary">登   录</a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <a id="clearInput" class="btn btn-default">重   置</a>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="forgetpwd.html" id="forget">忘记密码？</a>
+                                <a href="signin.html/" id="signin">去注册</a></div>
+                                <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx0d031e713bf741bc&redirect_uri=&response_type=code&scope= snsapi_login&state=STATE#wechat_redirect/" id="wechatlogin">微信登录</a></div>
+                        </div>
+                  </form>
+{#                  <div class="form-group" >#}
+{#                          <h5 class="pull-right" >兽医小灶出品</h5>#}
+{#                  </div>#}
+
+              </div>
+          </div>
+
+          <div class="col-md-3" >
+          </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+<script type="text/javascript">
+    var opts = {
+                lines: 13, // 花瓣数目
+                length: 20, // 花瓣长度
+                width: 10, // 花瓣宽度
+                radius: 30, // 花瓣距中心半径
+                corners: 1, // 花瓣圆滑度 (0-1)
+                rotate: 0, // 花瓣旋转角度
+                direction: 1, // 花瓣旋转方向 1: 顺时针, -1: 逆时针
+                color: '#000', // 花瓣颜色
+                speed: 1, // 花瓣旋转速度
+                trail: 60, // 花瓣旋转时的拖影(百分比)
+                shadow: false, // 花瓣是否显示阴影
+                hwaccel: false, //spinner 是否启用硬件加速及高速旋转
+                className: 'spinner', // spinner css 样式名称
+                zIndex: 2e9, // spinner的z轴 (默认是2000000000)
+                top: '25%', // spinner 相对父容器Top定位 单位 px
+                left: '50%'// spinner 相对父容器Left定位 单位 px
+            };
+     {#var spinner = new Spinner(opts);#}
+
+    $(document).ready(function() {
+        $("#clearInput").click(function () {
+            $("input").val("");
+        });
+
+        $("#submit").click(function() {
+            console.log($('#tele').val());
+            console.log($('#pwd').val());
+
+            $.post("login.html",
+                {
+                    "phone": $('#tele').val(),
+                    "password": $('#pwd').val(),
+                },
+                function (data) {
+                    {#var data = JSON.parse(data);#}
+                    if (data) {
+                        console.log(data);
+                        if(data.code == 99999){
+                            {#window.href='loading.html';#}
+                        }else{
+                            alert('用户名或密码输入不正确！');
+                            $('#pwd').val("");
+                        }
+                    }else {
+                        alert('服务器错误！');
+                    }
+                }
+                , "json");
+            })
+        });
+</script>

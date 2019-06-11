@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <style type="text/css">
+                html,body{
+                    height:100%;
+                }
+                body{
+                {#background:url(/主界面/image/1.jpg) center center;#}
+                background-size:cover;
+                }
+                #grade{
+                text-align:center;
+                position:fixed;
+                left:40%;
+                top:35%;
+                background:rgba(255,255,255,0.8);
+                border:2px solid #cc00ff;
+                border-radius:4px;
+                padding:30px 30px 30px 30px;
+                }
+                a{
+                background:rgba(192,192,192,.7);
+                }
+                a,button {
+                    display: inline-block;
+                    outline: none;
+                    cursor: pointer;
+                    text-align: center;
+                    text-decoration: none;
+                    font: 14px/100% Arial, Helvetica, sans-serif;
+                    padding: .5em 2em .55em;
+                    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+                    -webkit-border-radius: .5em;
+                    -moz-border-radius: .5em;
+                    border-radius: .5em;
+                    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+                    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+                    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+                }
+                a,button:hover {
+                    text-decoration: none;
+                }
+                a,button:active {
+                    position: relative;
+                    top: 1px;
+                }
+                </style>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <title>我的成绩</title>
+            <script src="/static/js/jquery-3.3.1.js"></script>
+            <script src="/static/js/bootstrap.min.js"></script>
+{#            <script src="./js/viewer-jquery.min.js"></script>#}
+            <script type="text/javascript">
+            var request =
+            {
+              QueryString : function(val)
+              {
+                var uri = window.location.search;
+                var re = new RegExp("" +val+ "=([^&?]*)", "ig");
+                return ((uri.match(re))?(uri.match(re)[0].substr(val.length+1)):null);
+              }
+            }
+            </script>
+            <script type="text/javascript">
+            {#var n1 = request.QueryString("uptime");#}
+            {#console.log(n1);#}
+            var json=localStorage.getItem("data2"); //localstorage转为json使用
+            var jsonl=JSON.parse(json);   //一般都是json转为localstorage实现储存  再localstorage转为json来使用
+            console.log(jsonl);
+            if (n1==""||jsonl.grade1=="")
+            {
+               document.write("<h1>您尚未答题，不能查看本页面，2秒后将为您跳转</h1>");
+               // window.setTimeout("window.location='/login'",2000);
+             }
+            </script>
+    </head>
+    <body>
+        <div class="text-center" style=“display:none”>
+            <h1>考试结束</h1>
+            
+        </div>
+        <div id="grade">
+            <h3 id="1"></h3>
+            <h3 id="2"></h3>
+            <h3 id="3"></h3>
+            <h3 id="4"></h3>
+        </div>
+        <script type="text/javascript">
+            if((jsonl.grade1/jsonl.grade2)>=0.8)
+            {
+                document.getElementById("1").innerHTML="测试结果："+ jsonl.grade1 +"/" +jsonl.grade2;
+                document.getElementById("2").innerHTML="学识等级：学神";
+                document.getElementById("3").innerHTML="复习建议：xxxxxxxx";
+                document.getElementById("4").innerHTML="课程推荐：<a href='#'>佛脚班课程</a>";
+            }
+            if((jsonl.grade1/jsonl.grade2)>=0.6&&(jsonl.grade1/jsonl.grade2)<0.8)
+            {
+                document.getElementById("1").innerHTML="测试结果："+ jsonl.grade1 +"/" +jsonl.grade2;
+                document.getElementById("2").innerHTML="学识等级：学霸";
+                document.getElementById("3").innerHTML="复习建议：xxxxxxxx";
+                document.getElementById("4").innerHTML="课程推荐：<a href='#'>佛脚班课程</a>";
+            }
+            if((jsonl.grade1/jsonl.grade2)>=0.4&&(jsonl.grade1/jsonl.grade2)<0.6)
+            {
+                document.getElementById("1").innerHTML="测试结果："+ jsonl.grade1 +"/" +jsonl.grade2;
+                document.getElementById("2").innerHTML="学识等级：学民";
+                document.getElementById("3").innerHTML="复习建议：xxxxxxxx";
+                document.getElementById("4").innerHTML="课程推荐：<a href='#'>佛脚班课程</a>";
+            }
+            if((jsonl.grade1/jsonl.grade2)<0.4)
+            {
+                document.getElementById("1").innerHTML="测试结果："+ jsonl.grade1 +"/" +jsonl.grade2;
+                document.getElementById("2").innerHTML="学识等级：学渣";
+                document.getElementById("3").innerHTML="复习建议：xxxxxxxx";
+                document.getElementById("4").innerHTML="课程推荐：<a href='#'>佛脚班课程</a>";
+            }
+        </script>
+    </body>
+</html>
+
+<script !src="">
+     $(document).ready(function () {
+                 {# 如果没有data1#}
+         {#localStorage.getItem();#}
+         if(localStorage.getItem("data2")!= null)
+            data2=localStorage.getItem("data2");
+            var uptime = Date.parse(new Date());
+            var jsonl=JSON.parse(data2);   //一般都是json转为localstorage实现储存  再localstorage转为json来使用
+            console.log(jsonl);
+            var grade1 = jsonl.grade1;
+            var grade = jsonl.grade1/jsonl.grade2;
+            var titlenum = jsonl.grade2;
+            console.log(grade);
+            console.log(titlenum);
+            var get = $.ajax({
+                        type: 'post',
+                        url: 'mygrade.html',
+                        data: {
+                            "record":data2,
+                            "uptime":uptime,
+                            "grade":grade,
+                            "titlenum":titlenum,
+                            "grade1":grade1,
+                        },
+                        dataType:"JSON",
+                        success: function (data) {
+                             if(data.code == "99999"){
+                                 alert("成功");
+                                 var storage=window.localStorage;
+                                //写入b字段
+                                storage.data1= data.data.list;
+                                 {#window.location.href = '';#}
+                             }else{
+                                 alert("已经提交过成绩！")
+                             }
+                        },
+                        error: function(msg) {//ajax请求失败后触发的方法
+                            console.log("ajax没有上传成功");
+                         }
+                    });
+
+            })
+
+
+
+</script>

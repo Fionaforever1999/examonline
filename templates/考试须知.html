@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)http://119.23.149.144:7091/obt/exam/before.html?kmtype=2&time=1537680428000 -->
+<html class="gr__119_23_149_144"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>全国执业兽医资格考试计算机考试模拟系统</title>
+  <link href="./static/style.css" rel="stylesheet" type="text/css">
+  <link href="./static/item.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./全国执业兽医资格考试计算机考试模拟系统_files/ui-dialog.css">
+
+  <link rel="stylesheet" type="text/css" href="./全国执业兽医资格考试计算机考试模拟系统_files/before.css">
+
+  <script language="javascript" src="./全国执业兽医资格考试计算机考试模拟系统_files/jquery.min.js"></script>
+  <script language="javascript" src="./全国执业兽医资格考试计算机考试模拟系统_files/dialog-min.js"></script>
+
+ <script type="text/javascript">
+	function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]); return null;
+    }
+    var kmtype = getQueryString("kmtype");
+ 	var _obt = OBT.storage.getSession("basepath");
+ 	function inputObtTest(){
+ 		OBT.storage.removeSession("ss");
+ 		window.location.replace("obttest.html?kmtype="+kmtype);
+ 	}
+ </script>
+</head>
+<body data-gr-c-s-loaded="true">
+
+    <div class="mainback">
+      <div class="kspic" src="null/sign/signin/hqzp.do?url=signin/upload/photos/4/1/picture/8888888888.jpg&amp;time=Sun Sep 23 2018 13:27:08 GMT+0800 (中国标准时间)">
+        <img id="kspic" src="./全国执业兽医资格考试计算机考试模拟系统_files/blue.jpg" width="104" height="132" onerror="this.src=&#39;images/blue.jpg&#39;">
+      </div>
+      <div class="ksinfo">
+        	姓<span class="zhidden">考考考考考</span>名：<span id="ksxm">xxx</span><br>
+        	座<span class="zhidden">考考</span>位<span class="zhidden">考考</span>号：<span id="ksxb">001</span><br>
+        	准<span class="zhidden">考</span>考<span class="zhidden">考</span>证<span class="zhidden">考</span>号：<span id="zkzh">8888888888</span><br>
+        	有效身份证件号：<span id="sfzh">888888888888888888</span>
+      </div>
+      <div class="kstime">
+        <div id="msgTip">
+        	 距离考试还有：<span id="clock">00:02:55</span>
+        	 <span><a href="http://119.23.149.144:7091/obt/exam/before.html?kmtype=2&amp;time=1537680428000#" onclick="inputObtTest()" style="text-decoration:none;color:#FFFF00;">进入考试</a></span>
+        </div>
+
+      </div>
+	  <div style="float:right;margin-top:120px;font-weight:bold;margin-right:50px;font-size:18px;color:black;">
+			注：正式考试时，考生无法自行开始考试
+	  </div>
+      <div class="ksname"></div>
+      <iframe class="centerText" frameborder="0" id="mainText" src="./全国执业兽医资格考试计算机考试模拟系统_files/examRequired2.html"></iframe>
+      <div id="kckc">
+	  	<div class="kw kc" id="kwyq">考生须知</div>
+	    <div class="cz kc" id="czsm">操作说明</div>
+	  </div>
+   	</div>
+
+	 <div id="ksinfodialog" style="display:none">
+    <div class="ks_info">
+      <div style="height:10px;"></div>
+      <div class="title_txt">考生详细信息：</div>
+	   <div class="td-photo">
+		<img src="./全国执业兽医资格考试计算机考试模拟系统_files/blue.jpg" style="margin-top:76px;margin-left:40px;" class="kspic" width="104" height="132" onerror="this.src=&#39;images/blue.jpg&#39;">
+	  </div>
+      <table align="center" style="margin:0 auto;margin-left:160px;">
+        <tbody>
+          <tr>
+            <th>姓<span class="zhidden">考考考考考</span>名:</th>
+            <td style="width:80px"> <span id="xm">xxx</span> </td>
+          </tr>
+          <tr>
+            <th>座<span class="zhidden">考考</span>位<span class="zhidden">考考</span>号:</th>
+            <td> <span id="xb">001</span> </td>
+          </tr>
+          <tr>
+            <th>准<span class="zhidden">考</span>考<span class="zhidden">考</span>证<span class="zhidden">考</span>号:</th>
+            <td> <span id="zkzh2">8888888888</span> </td>
+          </tr>
+          <tr>
+            <th>有效身份证件号:</th>
+            <td> <span id="zjbm">888888888888888888</span> </td>
+          </tr>
+          <tr>
+            <th>&nbsp;</th>
+            <td>
+              <div i="button" class="dialog_button"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+</body></html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全国执业兽医资格考试计算机考试模拟系统</title>
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+
+    <link type="image/x-icon" href="http://119.23.149.144:7091/obt/common/images/favicon.ico?version=1.0.7406" rel="shortcut icon">
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/before.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <div class="mainback">
+      <div class="kspic" src="null/sign/signin/hqzp.do?url=signin/upload/photos/4/1/picture/8888888888.jpg&amp;time=Sat Oct 20 2018 16:11:26 GMT+0800 (中国标准时间)">
+        <img id="kspic" src="http://119.23.149.144:7091/obt/exam/images/blue.jpg" width="104" height="132">
+      </div>
+      <div class="ksinfo">
+        	姓<span class="zhidden">考考考考考</span>名：<span id="ksxm">{{ phone }}</span><br>
+        	座<span class="zhidden">考考</span>位<span class="zhidden">考考</span>号：<span id="ksxb">001</span><br>
+        	准<span class="zhidden">考</span>考<span class="zhidden">考</span>证<span class="zhidden">考</span>号：<span id="zkzh">8888888888</span><br>
+        	有效身份证件号：<span id="sfzh">888888888888888888</span>
+      </div>
+      <div class="kstime">
+        <div id="msgTip">
+        	 距离考试还有：<span id="clock">00:00:00</span>
+        	 <span><a id="enter" style="text-decoration:none;color:#FFFF00;">进入考试</a></span>
+        </div>
+
+      </div>
+	  <div style="float:right;margin-top:120px;font-weight:bold;margin-right:50px;font-size:18px;color:black;">
+			注：正式考试时，考生无法自行开始考试
+	  </div>
+      <div class="ksname"></div>
+      <iframe class="centerText" frameborder="0" id="mainText" src="http://119.23.149.144:7091/obt/exam/examRequired2.html?time=1540023086000"></iframe>
+      <div id="kckc">
+	  	<div class="kw kc" id="kwyq">考生须知</div>
+	    <div class="cz kc" id="czsm">操作说明</div>
+	  </div>
+   	</div>
+
+	 <div id="ksinfodialog" style="display:none">
+    <div class="ks_info">
+      <div style="height:10px;"></div>
+      <div class="title_txt">考生详细信息：</div>
+	   <div class="td-photo">
+		<img src="http://119.23.149.144:7091/obt/exam/images/blue.jpg" style="margin-top:76px;margin-left:40px;" class="kspic" width="104" height="132" onerror="this.src=&#39;images/blue.jpg&#39;">
+	  </div>
+      <table align="center" style="margin:0 auto;margin-left:160px;">
+        <tbody>
+          <tr>
+            <th>姓<span class="zhidden">考考考考考</span>名:</th>
+            <td style="width:80px"> <span id="xm">xxx</span> </td>
+          </tr>
+          <tr>
+            <th>座<span class="zhidden">考考</span>位<span class="zhidden">考考</span>号:</th>
+            <td> <span id="xb">001</span> </td>
+          </tr>
+          <tr>
+            <th>准<span class="zhidden">考</span>考<span class="zhidden">考</span>证<span class="zhidden">考</span>号:</th>
+            <td> <span id="zkzh2">8888888888</span> </td>
+          </tr>
+          <tr>
+            <th>有效身份证件号:</th>
+            <td> <span id="zjbm">888888888888888888</span> </td>
+          </tr>
+          <tr>
+            <th>&nbsp;</th>
+            <td>
+              <div i="button" class="dialog_button"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body></html>
+<script src="/static/js/jquery-3.3.1.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+    var flag = 0;
+    function timeShow(timeLeft) {
+        var second = Math.floor(timeLeft % 60);
+        var min = Math.floor((timeLeft / 60) % 60);
+        var hour = Math.floor((timeLeft / 3600) % 24);
+        second = second<10?("0"+second):second;
+        min = min<10?("0"+min):min;
+        hour = hour<10?("0"+hour):hour;
+        return hour+':'+min+':'+second;
+    }
+    function getCookie(name)
+    {
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+    function setCookie (name, value)
+    {
+        var expire = "";
+        var hours = 24;
+        if (hours != null)
+        {
+            expire = new Date ((new Date ()).getTime () + hours * 3600000);
+            expire = "; expires=" + expire.toGMTString ();
+        }
+        document.cookie = name + "=" + escape (value) + expire;
+    }
+
+    $(document).ready(function() {
+        $("#enter").click(function() {
+
+            window.location.href = "/index.html/"
+        });
+
+    })
+
+</script>
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>全国执业兽医资格考试计算机考试模拟系统</title>
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="viewport" content="width=device-width" />
+
+     <link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+
+        <style>
+            #Div{
+                width: 100%;
+                height: 100%;
+                text-align:center;
+            }
+
+            #firstDiv{
+                width: 100%;
+                height: 50%;
+            }
+            #secondDiv{
+                padding-top: 25%;
+                width: 50%;
+                margin:0 auto;
+            }
+        </style>
+</head>
+<body>
+    <div id="Div">
+        <div id="firstDiv">
+        </div>
+        <div id="secondDiv">
+            <span id="tips"></span>
+{#                <input id="btnRequest" type="button" value="显示加载" class="btnStyle" />#}
+{#                <input id="btnRequest2" type="button" value="隐藏加载" class="btnStyle" />#}
+        </div>
+        </div>
+
+</body>
+</html>
+
+<script src="/static/jquery-3.3.1.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/spin.js"></script>
+<script type="text/javascript">
+            //opts 样式可从网站在线制作
+            var opts = {
+                lines: 13, // 花瓣数目
+                length: 20, // 花瓣长度
+                width: 10, // 花瓣宽度
+                radius: 30, // 花瓣距中心半径
+                corners: 1, // 花瓣圆滑度 (0-1)
+                rotate: 0, // 花瓣旋转角度
+                direction: 1, // 花瓣旋转方向 1: 顺时针, -1: 逆时针
+                color: '#000', // 花瓣颜色
+                speed: 1, // 花瓣旋转速度
+                trail: 60, // 花瓣旋转时的拖影(百分比)
+                shadow: false, // 花瓣是否显示阴影
+                hwaccel: false, //spinner 是否启用硬件加速及高速旋转
+                className: 'spinner', // spinner css 样式名称
+                zIndex: 2e9, // spinner的z轴 (默认是2000000000)
+                top: '40%', // spinner 相对父容器Top定位 单位 px
+                left: '50%'// spinner 相对父容器Left定位 单位 px
+            };
+
+            var spinner = new Spinner(opts);
+
+            $(document).ready(function () {
+                 Request();
+                 {# 如果没有data1#}
+                 if(localStorage.getItem("data1") == null)
+                    var get = $.ajax({
+                        type: 'post',
+                        url: 'loading.html',
+                        data: {
+                            id:"1",
+                        },
+                        dataType:"JSON",
+                        success: function (data) {
+                             Request2();
+                             alert("hi1")
+                             if(data.code == "99999"){
+                                 var storage=window.localStorage;
+                                //写入b字段
+                                storage.data1= data.data.list;
+                                window.location.href = 'waiting.html';
+                             }else{
+                                 get();
+                             }
+                        },
+                        error: function(msg) {//ajax请求失败后触发的方法
+                            Request2();
+			                console.log(msg);
+                            {#alert(msg); //弹出错误信息#}
+                            {#window.href='login.html';#}
+                         }
+                    });
+                 else{
+                     console.log("已经存在数据了");
+                     Request2();
+                     {#window.location.href = '/waiting/';#}
+                 }
+                function Request(){
+                    //请求时spinner出现
+                    var target = $("#firstDiv").get(0);
+                    $('#tips').html("正在加载题目...");
+                    spinner.spin(target);
+                }
+
+                function Request2() {
+                    //关闭spinner
+                    spinner.spin();
+                     $('#tips').html("");
+                }
+            })
+</script>

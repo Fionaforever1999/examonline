@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://119.23.149.144:7091/obt/exam/obttest.html?kmtype=1 -->
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>全国执业兽医资格考试计算机考试模拟系统</title>
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+      <link rel="shortcut icon" href="http://www.wevet.cn/Public/Images/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+  <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="/static/css/style.css" rel="stylesheet" type="text/css">
+  <link href="/static/css/item.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{#  <script src="/static/js/viewer-jquery.min.js"></script>#}
+</head>
+<body>
+  <form>
+    <div id="layout">
+      <!-- header -->
+      <div id="header">
+        <div class="infoNav">
+        	<ul>
+        	  <li>
+	            <img id="detailbtn" class="kspic" style="width:74px;height:96px;border:none;margin-top:-7px;margin-right:10px;cursor:pointer" src="/static/img/blue.jpg">
+	          </li>
+	           <li style="font-size:14px;color:#044950;position:relative;top:-8px;">
+	          	<div style="height:20px;"><label>姓  名：</label><span id="ksxm">{{ phone }}</span></div>
+				<div style="height:20px;"><label>学  号：</label><span id="ksxb">001</span></div>
+	          </li>
+        	</ul>
+        </div>
+        <div class="clockNav">
+          <ul>
+            <li class="clockNav_m">
+              <div style="font-size:18px;color:red;font-weight:normal;">
+                	考试剩余时间:&nbsp;<span id="clock"></span>
+              </div>
+      			  <div style="margin-top:7px;font-size:16px;text-align:center">
+      					<span style="color:#044950;">未答:&nbsp;<span id="notPaperCount" style="color:red;"></span>道</span>
+                <span style="color:#044950;">已答:&nbsp;<span id="completePaperCount" style="color:black;">0</span>&nbsp;道&nbsp;</span>
+              </div>
+            </li>
+			    <li>
+				   <input id="submitbtn" class="t-button" name="交卷" type="button" value="交 卷">
+			   </li>
+          </ul>
+        </div>
+        <div class="subjectNav">
+          <span id="projectName" style="font-size:28px;font-weight:normal; color:#044950" class="prname">全国执业兽医资格考试计算机考试模拟系统</span>
+          <br>
+          <span id="subjectName" style="color:#044950;font-size:24px;font-weight:normal;">基础科目预防科目</span>
+        </div>
+      </div>
+      <!-- end header -->
+      <div>
+        <!-- 科目的tab -->
+        <ul class="nav nav-tabs" id="main">
+          <li class="active">
+            <div id="subject_title_1" tabindex="1" class="subject_title">
+              <a class="kemu-tab" id="myhome" href="#home" data-toggle="tab">基础科目</a>
+            </div>
+          </li>
+          <li>
+            <div id="subject_title_2" tabindex="2" class="subject_title">
+              <a class="kemu-tab" id="myios" href="#ios" data-toggle="tab">预防科目</a>
+            </div>
+          </li>
+        </ul>
+        <!-- end 科目的tab -->
+
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="col-xs-3" style="padding-right: 10px; ">
+              <h6 style="margin:0px;margin-left:-4px;line-height:20px;text-align:center;background-color:#a1dbdf;cursor:pointer;">
+                <span style="color:black;">注意事项</span><span id="xy" style="color:#044950;" data-toggle="collapse" data-target="#tips">（点击可隐藏/展开）</span>
+              </h6>
+              <!-- 提示信息 -->
+              <div id="tips" class="collapse in">
+                <div id="showOrHidden" class="submark" style="font-size:12px;line-height:14px;height:87px;background-color:#F2F2F2;">
+                  <table border="0" style="margin:0;padding:0;">
+                      <tbody><tr>
+                      <td style="vertical-align:top;">1、</td>
+                      <td>题号右方的“*”符号代表该小题尚未选择答案。</td>
+                      </tr>
+                       <tr>
+                      <td style="vertical-align:top;">2、</td>
+                      <td>题号右方的“?”符号代表该小题做过标记。</td>
+                      </tr>
+                       <tr>
+                      <td style="vertical-align:top;">3、</td>
+                      <td>选择选项的同时自动保存答案。</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!-- end 提示信息 -->
+
+
+            <div id="myTabContent" class="tab-content">
+                <!-- 第一类题 -->
+                <div class="tab-pane fade in active" id="home">
+                  <div class="panel-group">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <p data-toggle="collapse" href="#collapseA1" class="tixing">
+                            A1题型
+                          </p>
+                        </h4>
+                      </div>
+                      <div id="collapseA1" class="panel-collapse collapse in">
+                        <div class="panel-body menuitem" id="A11">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <p data-toggle="collapse" href="#collapseB1" class="tixing">
+                            B1题型
+                          </p>
+                        </h4>
+                      </div>
+                      <div id="collapseB1" class="panel-collapse collapse in">
+                        <div class="panel-body menuitem" id="B11">
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <p data-toggle="collapse" href="#collapseA2" class="tixing">
+                            A2题型
+                          </p>
+                        </h4>
+                      </div>
+                      <div id="collapseA2" class="panel-collapse collapse in">
+                        <div class="panel-body menuitem" id="A21">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <p data-toggle="collapse" href="#collapseA3" class="tixing">
+                            A3/4题型
+                          </p>
+                        </h4>
+                      </div>
+                      <div id="collapseA3" class="panel-collapse collapse in">
+                        <div class="panel-body menuitem" id="A31">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- panel group end -->
+                </div>
+                <!-- end 第一类题 -->
+
+                 <!--start 第二类题-->
+                <div class="tab-pane fade" id="ios">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <p data-toggle="collapse" href="#collapseA1" class="tixing">
+                                A1题型
+                              </p>
+                            </h4>
+                          </div>
+                          <div id="collapseA1" class="panel-collapse collapse in">
+                            <div class="panel-body menuitem" id="A12">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <p data-toggle="collapse" href="#collapseB1" class="tixing">
+                                B1题型
+                              </p>
+                            </h4>
+                          </div>
+                          <div id="collapseB1" class="panel-collapse collapse in">
+                            <div class="panel-body menuitem" id="B12">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <p data-toggle="collapse" href="#collapseA2" class="tixing">
+                                A2题型
+                              </p>
+                            </h4>
+                          </div>
+                          <div id="collapseA2" class="panel-collapse collapse in">
+                            <div class="panel-body menuitem" id="A22">
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <p data-toggle="collapse" href="#collapseA3" class="tixing">
+                                A3/4题型
+                              </p>
+                            </h4>
+                          </div>
+                          <div id="collapseA3" class="panel-collapse collapse in">
+                            <div class="panel-body menuitem" id="A32">
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--end第二类题-->
+                </div>
+              </div>
+            </div>
+            <!-- end left -->
+            <!-- 主内容 -->
+            <div class="col-xs-9" style="padding-left:8px; ">
+              <!-- 面包屑 -->
+              <div class="paperTitle">
+                <li id="littletitle" class="single">基础科目 &gt;&gt; A1题型</li>
+              </div>
+              <!-- end面包屑 -->
+
+              <!-- 题目 -->
+              <div class="ex-all">
+                <div class="tab-content" id="mytitle">
+
+                </div>
+              <div class="t-handle">
+                <label class="checkbox-inline">
+                  <input id="mark" type="checkbox"style="width:16px;height:16px;vertical-align:middle;">标记
+                </label>
+                &nbsp; &nbsp;
+                <button id="prevbtn" name="上一题" type="button" class="t-button">上一题</button>
+                &nbsp; &nbsp;
+                <button id="nextbtn" name="下一题" type="button" class="t-button">下一题</button>
+              </div>
+            </div>
+            <!--  end right -->
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </form>
+</body>
+</html>
+<script type="text/javascript">
+    var json3 = localStorage.getItem("data1"); //localstorage转为json使用
+    {#console.log(json3);#}
+    var jsons = JSON.parse(json3);//一般都是json转为localstorage实现储存  再localstorage转为json来使用
+    var jsonl = {}; // 成绩的json
+    // 初始化成绩的json
+    initGrade();
+
+    // 初始化json
+
+    if(jsons!=null){
+        //动态渲染开始
+        var n1=1;  //第n题 小于总的题目数
+        var n2=1;  //第n题 记录总的题目数
+        var n3=0;  //记录未答的题目数
+        var n4=0;  //记录分数
+        var L_A1=""; //左边菜单栏A1
+        var L_B1="";
+        var L_A2="";
+        var L_A3="";
+        var R_A1="";
+        var R_B1="";
+        var R_A2="";
+        var R_A3="";
+        var R_title="";  //右边题目
+        var tempclass1;
+        var tempclass2;
+        var tempname;
+        //1-A1题目渲染开始
+        for(var i = 0;i < jsons['1']['A1'].length; i ++){
+            //左边菜单栏渲染 #home
+            if(i == 0) {
+                tempclass1="navs active navs-menu";
+                tempclass2="tab-pane active";
+            }else{
+                tempclass1="navs navs-menu";
+                tempclass2="tab-pane";
+            }
+            //
+            var aa="";
+            var bb="";
+            var cc="";
+            var dd="";
+            var ee="";
+            var tempsign1="";
+            if(jsonl['upanswer'][n1-1].answer=="A")
+                aa="checked='checked'";
+            if(jsonl['upanswer'][n1-1].answer=="B")
+                bb="checked='checked'";
+            if(jsonl['upanswer'][n1-1].answer=="C")
+                cc="checked='checked'";
+            if(jsonl['upanswer'][n1-1].answer=="D")
+                dd="checked='checked'";
+            if(jsonl['upanswer'][n1-1].answer=="E")
+                ee="checked='checked'";
+            if(aa==""&&bb==""&&cc==""&&dd==""&&ee=="") {
+                tempsign1="*";
+                n3++;
+            }
+  //
+            var tempsign2="";
+            if(jsonl['upanswer'][n1-1].mark==1)
+                tempsign2="?";
+            else if(jsonl['upanswer'][n1-1].mark==0)
+                tempsign2="";
+            else
+                tempsign2="@";
+            L_A1+="<a id='IIT-"+ n1 +"' href='#"+ jsons['1']['A1'][i].label +"' class='"+ tempclass1 +" ' data-toggle='tab'>"+ jsons['1']['A1'][i].label +"&nbsp;<span id='S-"+ n1 +"' style='color: red'>"+ tempsign1 +"</span><span id='A-"+ n1 +"'  style='color: red'>"+ tempsign2 +"</span></a>";
+            n1=n1+1;
+            //右边题目栏渲染
+            tempname= jsons['1']['A1'][i].id +"-"+ jsons['1']['A1'][i].offset;
+            R_title+="<div class='"+ tempclass2 +"' id='"+jsons['1']['A1'][i].label +"'><h4 class='t-title'>每一道考题下面有A、B、C、D、E五个备选答案，请从中选择一个最佳答案。</h4><div class='t-detail form-group'><p class='t-num'>第<span>"+ n2 +"</span>题</p><div class='t-list' style='padding-left: 48px;padding-right: 48px '><p class='t-subject'>"+ jsons['1']['A1'][i].title +"</p><label class='radio-inline'><input type='radio' "+ aa +"value='A' name='"+ tempname +"'>A."+ jsons['1']['A1'][i].a +"</label><br><label class='radio-inline'><input type='radio'"+ bb +" value='B' name='"+ tempname +"'>B."+ jsons['1']['A1'][i].b +"</label><br><label class='radio-inline'><input type='radio'"+ cc +" value='C' name='"+ tempname +"'>C."+ jsons['1']['A1'][i].c +"</label><br><label class='radio-inline'><input type='radio'"+ dd +" value='D' name='"+ tempname +"'>D."+ jsons['1']['A1'][i].d +"</label><br><label class='radio-inline'><input type='radio'"+ ee +" value='E' name='"+ tempname +"'>E."+ jsons['1']['A1'][i].e +"</label></div></div></div>";
+            n2=n2+1;
+ //右边题目渲染结束
+}
+//1-A1题目渲染结束
+    {#console.log(n1);#}
+//1-B1题目渲染开始
+        for(var i=0;i<jsons['1']['B1'].length;i++) {
+  //右边题目栏渲染开始
+        var tempsign1="";
+        R_title+="<div class='tab-pane' id='"+ jsons['1']['B1'][i].label +"'><h4 class='t-title'>"+ jsons['1']['B1'][i].label +"题共用下列A、B、C、D、E五个备选答案，请为每一道考题从备选答案中选择一个最佳答案。</h4><div class='t-detail form-group'><div class='t-list' style='padding-left: 48px;padding-right: 48px '></br>A."+ jsons['1']['B1'][i].a +"</br>B."+ jsons['1']['B1'][i].b +"</br>C."+ jsons['1']['B1'][i].c +"</br>D."+ jsons['1']['B1'][i].d +"</br>E."+ jsons['1']['B1'][i].e +"</br></br>";
+        for(var j=0;j<jsons['1']['B1'][i].list.length;j++) {
+    //
+            var aa="";
+            var bb="";
+            var cc="";
+            var dd="";
+            var ee="";
+            {#console.log(jsonl['upanswer'][n1-1]);#}
+            if(jsonl['upanswer'][n1-1].list[j].answer=="A")
+                aa="checked='checked'";
+            if(jsonl['upanswer'][n1-1].list[j].answer=="B")
+                bb="checked='checked'";
+            if(jsonl['upanswer'][n1-1].list[j].answer=="C")
+                cc="checked='checked'";
+            if(jsonl['upanswer'][n1-1].list[j].answer=="D")
+                dd="checked='checked'";
+            if(jsonl['upanswer'][n1-1].list[j].answer=="E")
+                ee="checked='checked'";
+            if(aa==""&&bb==""&&cc==""&&dd==""&&ee=="")
+            {
+              tempsign1="*";
+              n3++;
+            }
+    //
+    tempname= jsons['1']['B1'][i].id +"-"+ jsons['1']['B1'][i].list[j].offset;
+    R_title+="<p class='t-subject'>"+ n2 +"."+ jsons['1']['B1'][i].list[j].title +"</p><label class='radio-inline' ><input type='radio' value='A'"+ aa +" name='"+ tempname +"' >A</label>&nbsp;<label class='radio-inline'><input type='radio' "+ bb +"value='B' name='"+ tempname +"' >B</label>&nbsp;<label class='radio-inline'><input type='radio' " +cc +"value='C' name='"+ tempname +"' >C</label>&nbsp;<label class='radio-inline'><input type='radio' "+ dd +"value='D' name='"+ tempname +"' >D</label>&nbsp;<label class='radio-inline'><input type='radio'"+ ee +" value='E' name='"+ tempname +"' >E</label></br></br>";
+    n2=n2+1;
+  }
+        R_title+="</div></div></div>";
+//右边题目渲染结束
+  //左边菜单栏渲染 #home
+    var tempsign2="";
+    if(jsonl['upanswer'][n1-1].mark==1)
+        tempsign2="?";
+    else if(jsonl['upanswer'][n1-1].mark==0)
+        tempsign2="";
+    else
+        tempsign2="@";
+  L_B1+="<a id='IIT-"+ n1 +"' href='#"+ jsons['1']['B1'][i].label +"' class='navs navs-menu' data-toggle='tab'>"+ jsons['1']['B1'][i].label +"&nbsp;<span id='S-"+ n1 +"' style='color: red'>"+ tempsign1 +"</span><span id='A-"+ n1 +"'  style='color: red'>"+ tempsign2 +"</span></a>";
+  n1=n1+1;
+  //左边菜单栏渲染结束
+}
+//1-B1题目渲染结束
+//1-A2题目渲染开始
+for(var i=0;i<jsons['1']['A2'].length;i++)
+{
+  //左边菜单栏渲染 #home
+  var aa="";
+  var bb="";
+  var cc="";
+  var dd="";
+  var ee="";
+  var tempsign1="";
+  if(jsonl['upanswer'][n1-1].answer=="A")
+   aa="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="B")
+   bb="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="C")
+   cc="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="D")
+   dd="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="E")
+   ee="checked='checked'";
+  if(aa==""&&bb==""&&cc==""&&dd==""&&ee=="")
+  {
+    tempsign1="*";
+    n3++;
+  }
+  //
+  var tempsign2="";
+  if(jsonl['upanswer'][n1-1].mark==1)
+    tempsign2="?";
+  else if(jsonl['upanswer'][n1-1].mark==0)
+    tempsign2="";
+  else
+    tempsign2="@";
+  L_A2+="<a id='IIT-"+ n1 +"' href='#"+ jsons['1']['A2'][i].label +"' class='navs navs-menu' data-toggle='tab'>"+ jsons['1']['A2'][i].label +"&nbsp;<span id='S-"+ n1 +"' style='color: red'>"+ tempsign1 +"</span><span id='A-"+ n1 +"'  style='color: red'>"+ tempsign2 +"</span></a>";
+  n1=n1+1;
+  //右边题目栏渲染
+  tempname= jsons['1']['A2'][i].id +"-"+ jsons['1']['A2'][i].offset;
+  R_title+="<div class='tab-pane' id='"+jsons['1']['A2'][i].label +"'><h4 class='t-title'>每一道考题下面有A、B、C、D、E五个备选答案，请从中选择一个最佳答案。</h4><div class='t-detail form-group'><p class='t-num'>第<span>"+ n2 +"</span>题</p><div class='t-list' style='padding-left: 48px;padding-right: 48px '><p class='t-subject'>"+ jsons['1']['A2'][i].title +"</p><label class='radio-inline'><input type='radio'"+ aa +" value='A' name='"+ tempname +"'>A."+ jsons['1']['A2'][i].a +"</label><br><label class='radio-inline'><input type='radio'"+ bb +" value='B' name='"+ tempname +"'>B."+ jsons['1']['A2'][i].b +"</label><br><label class='radio-inline'><input type='radio' "+ cc +"value='C' name='"+ tempname +"'>C."+ jsons['1']['A2'][i].c +"</label><br><label class='radio-inline'><input type='radio' "+ dd +"value='D' name='"+ tempname +"'>D."+ jsons['1']['A2'][i].d +"</label><br><label class='radio-inline'><input type='radio' "+ ee +" value='E' name='"+ tempname +"'>E."+ jsons['1']['A2'][i].e +"</label></div></div></div>";
+ //右边题目渲染结束
+  n2=n2+1;
+}
+//1-A2题目渲染结束
+//1-A3题目渲染开始
+for(var i=0;i<jsons['1']['A3'].length;i++)
+{
+  //右边题目栏渲染
+  var tempsign1="";
+  R_title+="<div class='tab-pane' id='"+ jsons['1']['A3'][i].label +"'><h4 class='t-title'>以下提供若干个案例，每个案例下设若干道考题。请根据案例所提供的信息，在每一道考题下面的A、B、C、D、E五个备选答案中选择一个最佳答案。</h4><div class='t-detail form-group'><p class='t-num'>第<span>"+ jsons['1']['A3'][i].label +"</span>题</p><div class='container-fluid'><div class='row'><div class='col-xs-6' style='width:40%'><p class='t-subject'>"+ jsons['1']['A3'][i].other +"</p></div><div class='col-xs-6' style='height: 500px; overflow-y: auto;border-left:3px solid#a1dbdf'>";
+  for(var j=0;j<jsons['1']['A3'][i].list.length;j++)
+  {
+     //
+    var aa="";
+    var bb="";
+    var cc="";
+    var dd="";
+    var ee="";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="A")
+    aa="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="B")
+    bb="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="C")
+    cc="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="D")
+    dd="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="E")
+    ee="checked='checked'";
+    if(aa==""&&bb==""&&cc==""&&dd==""&&ee=="")
+    {
+      tempsign1="*";
+      n3++;
+    }
+    //
+    tempname= jsons['1']['A3'][i].id +"-"+ jsons['1']['A3'][i].list[j].offset;
+    R_title+="<div class='t-list' style='padding-left: 48px; '><p class='t-subject'>"+ n2 +"."+ jsons['1']['A3'][i].list[j].title +"</p><label class='radio-inline'><input type='radio'"+ aa +" value='A' name='"+ tempname +"'>A."+ jsons['1']['A3'][i].list[j].a +"</label><br><label class='radio-inline'><input type='radio' "+ bb +"value='B' name='"+ tempname +"'>B."+ jsons['1']['A3'][i].list[j].b +"</label><br><label class='radio-inline'><input type='radio' "+ cc +"value='C' name='"+ tempname +"'>C."+ jsons['1']['A3'][i].list[j].c +"</label><br><label class='radio-inline'><input type='radio' "+ dd +"value='D' name='"+ tempname +"'>D."+ jsons['1']['A3'][i].list[j].d +"</label><br><label class='radio-inline'><input type='radio' "+ ee +" value='E' name='"+ tempname +"'>E."+ jsons['1']['A3'][i].list[j].e +"</label></div><br><br>";
+    n2=n2+1;
+  }
+  R_title+="</div></div></div></div></div>";
+//右边题目渲染结束
+  //左边菜单栏渲染 #home
+  var tempsign2="";
+  if(jsonl['upanswer'][n1-1].mark==1)
+    tempsign2="?";
+  else if(jsonl['upanswer'][n1-1].mark==0)
+    tempsign2="";
+  else
+    tempsign="@";
+  L_A3+="<a id='IIT-"+ n1 +"' href='#"+ jsons['1']['A3'][i].label +"' class='navs navs-menu' data-toggle='tab'>"+ jsons['1']['A3'][i].label +"&nbsp;<span id='S-"+ n1 +"' style='color: red'>"+ tempsign1 +"</span><span id='A-"+ n1 +"'  style='color: red'>"+ tempsign2 +"</span></a>";
+  n1=n1+1;
+  //左边菜单栏渲染结束
+
+}
+//1-A3题目渲染结束
+
+var indexright =n1; // 右边的flag
+
+//2-A1题目渲染开始
+for(var i=0;i<jsons['2']['A1'].length;i++)
+{
+  //左边菜单栏渲染 #ios
+  if(i==0)
+  {
+    tempclass1="navs active navs-menu2";
+    tempclass2="tab-pane active";
+  }
+  else
+  {
+    tempclass1="navs navs-menu2";
+    tempclass2="tab-pane";
+  }
+  //
+  var aa="";
+  var bb="";
+  var cc="";
+  var dd="";
+  var ee="";
+  var tempsign1="";
+  if(jsonl['upanswer'][n1-1].answer=="A")
+   aa="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="B")
+   bb="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="C")
+   cc="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="D")
+   dd="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="E")
+   ee="checked='checked'";
+  if(aa==""&&bb==""&&cc==""&&dd==""&&ee=="")
+  {
+    tempsign1="*";
+    n3++;
+  }
+  //
+  var tempsign2="";
+  if(jsonl['upanswer'][n1-1].mark==1)
+    tempsign2="?";
+  else if(jsonl['upanswer'][n1-1].mark==0)
+    tempsign2="";
+  else
+    tempsign2="@";
+  R_A1+="<a id='IIT-"+ n1 +"' href='#"+ jsons['2']['A1'][i].label +"' class='"+ tempclass1 +" ' data-toggle='tab'>"+ jsons['2']['A1'][i].label +"&nbsp;<span id='S-"+ n1 +"' style='color: red'>"+ tempsign1 +"</span><span id='A-"+ n1 +"'  style='color: red'>"+ tempsign2 +"</span></a>";
+  n1=n1+1;
+  //右边题目栏渲染
+  tempname= jsons['2']['A1'][i].id +"-"+ jsons['2']['A1'][i].offset;
+  R_title+="<div class='tab-pane' id='"+jsons['2']['A1'][i].label +"'><h4 class='t-title'>每一道考题下面有A、B、C、D、E五个备选答案，请从中选择一个最佳答案。</h4><div class='t-detail form-group'><p class='t-num'>第<span>"+ n2 +"</span>题</p><div class='t-list' style='padding-left: 48px;padding-right: 48px '><p class='t-subject'>"+ jsons['2']['A1'][i].title +"</p><label class='radio-inline'><input type='radio' "+ aa +"value='A' name='"+ tempname +"'>A."+ jsons['2']['A1'][i].a +"</label><br><label class='radio-inline'><input type='radio' "+ bb +"value='B' name='"+ tempname +"'>B."+ jsons['2']['A1'][i].b +"</label><br><label class='radio-inline'><input type='radio' "+ cc +"value='C' name='"+ tempname +"'>C."+ jsons['2']['A1'][i].c +"</label><br><label class='radio-inline'><input type='radio' "+ dd +"value='D' name='"+ tempname +"'>D."+ jsons['2']['A1'][i].d +"</label><br><label class='radio-inline'><input type='radio' "+ ee +"value='E' name='"+ tempname +"'>E."+ jsons['2']['A1'][i].e +"</label></div></div></div>";
+  n2=n2+1;
+ //右边题目渲染结束
+}
+//2-A1题目渲染结束
+//2-B1题目渲染开始
+for(var i=0;i<jsons['2']['B1'].length;i++)
+{
+  //右边题目栏渲染
+  var tempsign1="";
+  R_title+="<div class='tab-pane' id='"+ jsons['2']['B1'][i].label +"'><h4 class='t-title'>"+ jsons['2']['B1'][i].label +"题共用下列A、B、C、D、E五个备选答案，请为每一道考题从备选答案中选择一个最佳答案。</h4><div class='t-detail form-group'><div class='t-list' style='padding-left: 48px;padding-right: 48px '></br>A."+ jsons['2']['B1'][i].a +"</br>B."+ jsons['2']['B1'][i].b +"</br>C."+ jsons['2']['B1'][i].c +"</br>D."+ jsons['2']['B1'][i].d +"</br>E."+ jsons['2']['B1'][i].e +"</br></br>";
+  for(var j=0;j<jsons['2']['B1'][i].list.length;j++)
+  {
+    var aa="";
+    var bb="";
+    var cc="";
+    var dd="";
+    var ee="";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="A")
+    aa="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="B")
+    bb="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="C")
+    cc="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="D")
+    dd="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="E")
+    ee="checked='checked'";
+    if(aa==""&&bb==""&&cc==""&&dd==""&&ee=="")
+    {
+      tempsign1="*";
+      n3++;
+    }
+    //
+    tempname= jsons['2']['B1'][i].id +"-"+ jsons['2']['B1'][i].list[j].offset;
+    R_title+="<p class='t-subject'>"+ n2 +"."+ jsons['2']['B1'][i].list[j].title +"</p><label class='radio-inline' ><input type='radio' " + aa +"value='A' name='"+ tempname +"' >A</label>&nbsp;<label class='radio-inline'><input type='radio' " + bb +"value='B' name='"+ tempname +"' >B</label>&nbsp;<label class='radio-inline'><input type='radio' " + cc +"value='C' name='"+ tempname +"' >C</label>&nbsp;<label class='radio-inline'><input type='radio' " + dd +"value='D' name='"+ tempname +"' >D</label>&nbsp;<label class='radio-inline'><input type='radio' " + ee +"value='E' name='"+ tempname +"' >E</label></br></br>";
+    n2=n2+1;
+  }
+  R_title+="</div></div></div>";
+//右边题目渲染结束
+  //左边菜单栏渲染 #ios
+  var tempsign2="";
+  if(jsonl['upanswer'][n1-1].mark==1)
+    tempsign2="?";
+  else if(jsonl['upanswer'][n1-1].mark==0)
+    tempsign2="";
+  else
+    tempsign2="@";
+  R_B1+="<a id='IIT-"+ n1 +"' href='#"+ jsons['2']['B1'][i].label +"' class='navs navs-menu2' data-toggle='tab'>"+ jsons['2']['B1'][i].label +"&nbsp;<span id='S-"+ n1 +"' style='color: red'>"+ tempsign1 +"</span><span id='A-"+ n1 +"'  style='color: red'>"+ tempsign2 +"</span></a>";
+  n1=n1+1;
+}
+//2-B1题目渲染结束
+//2-A2题目渲染开始
+for(var i=0;i<jsons['2']['A2'].length;i++)
+{
+  //左边菜单栏渲染 #ios
+  //
+  var aa="";
+  var bb="";
+  var cc="";
+  var dd="";
+  var ee="";
+  var tempsign1="";
+  if(jsonl['upanswer'][n1-1].answer=="A")
+   aa="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="B")
+   bb="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="C")
+   cc="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="D")
+   dd="checked='checked'";
+  if(jsonl['upanswer'][n1-1].answer=="E")
+   ee="checked='checked'";
+  if(aa==""&&bb==""&&cc==""&&dd==""&&ee=="")
+  {
+    tempsign1="*";
+    n3++;
+  }
+  //
+  var tempsign2="";
+  if(jsonl['upanswer'][n1-1].mark==1)
+    tempsign2="?";
+  else if(jsonl['upanswer'][n1-1].mark==0)
+    tempsign2="";
+  else
+    tempsign2="@";
+  R_A2+="<a id='IIT-"+ n1 +"' href='#"+ jsons['2']['A2'][i].label +"' class='navs navs-menu2' data-toggle='tab'>"+ jsons['2']['A2'][i].label +"&nbsp;<span id='S-"+ n1 +"' style='color: red'>"+ tempsign1 +"</span><span id='A-"+ n1 +"'  style='color: red'>"+ tempsign2 +"</span></a>";
+  n1=n1+1;
+  //右边题目栏渲染
+  tempname= jsons['2']['A2'][i].id +"-"+ jsons['2']['A2'][i].offset;
+  R_title+="<div class='tab-pane' id='"+jsons['2']['A2'][i].label +"'><h4 class='t-title'>每一道考题下面有A、B、C、D、E五个备选答案，请从中选择一个最佳答案。</h4><div class='t-detail form-group'><p class='t-num'>第<span>"+ n2 +"</span>题</p><div class='t-list' style='padding-left: 48px;padding-right: 48px '><p class='t-subject'>"+ jsons['2']['A2'][i].title +"</p><label class='radio-inline'><input type='radio' "+ aa +"value='A' name='"+ tempname +"'>A."+ jsons['2']['A2'][i].a +"</label><br><label class='radio-inline'><input type='radio' "+ bb +"value='B' name='"+ tempname +"'>B."+ jsons['2']['A2'][i].b +"</label><br><label class='radio-inline'><input type='radio' "+ cc +"value='C' name='"+ tempname +"'>C."+ jsons['2']['A2'][i].c +"</label><br><label class='radio-inline'><input type='radio' "+ dd +"value='D' name='"+ tempname +"'>D."+ jsons['2']['A2'][i].d +"</label><br><label class='radio-inline'><input type='radio' "+ ee +"value='E' name='"+ tempname +"'>E."+ jsons['2']['A2'][i].e +"</label></div></div></div>";
+ //右边题目渲染结束
+  n2=n2+1;
+}
+//2-A2题目渲染结束
+//2-A3题目渲染开始
+for(var i=0;i<jsons['2']['A3'].length;i++)
+{
+  //右边题目栏渲染
+  var tempsign1="";
+  R_title+="<div class='tab-pane' id='"+ jsons['2']['A3'][i].label +"'><h4 class='t-title'>以下提供若干个案例，每个案例下设若干道考题。请根据案例所提供的信息，在每一道考题下面的A、B、C、D、E五个备选答案中选择一个最佳答案。</h4><div class='t-detail form-group'><p class='t-num'>第<span>"+ jsons['2']['A3'][i].label +"</span>题</p><div class='container-fluid'><div class='row'><div class='col-xs-6' style='width:40%'><p class='t-subject'>"+ jsons['2']['A3'][i].other +"</p></div><div class='col-xs-6' style='height: 500px; overflow-y: auto;border-left:3px solid#a1dbdf'>";
+  for(var j=0;j<jsons['2']['A3'][i].list.length;j++)
+  {
+     //
+    var aa="";
+    var bb="";
+    var cc="";
+    var dd="";
+    var ee="";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="A")
+    aa="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="B")
+    bb="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="C")
+    cc="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="D")
+    dd="checked='checked'";
+    if(jsonl['upanswer'][n1-1].list[j].answer=="E")
+    ee="checked='checked'";
+    if(aa==""&&bb==""&&cc==""&&dd==""&&ee=="")
+    {
+      tempsign1="*";
+      n3++;
+    }
+    //
+    tempname= jsons['2']['A3'][i].id +"-"+ jsons['2']['A3'][i].list[j].offset;
+    R_title+="<div class='t-list' style='padding-left: 48px; '><p class='t-subject'>"+ n2 +"."+ jsons['2']['A3'][i].list[j].title +"</p><label class='radio-inline'><input type='radio' "+ aa +"value='A' name='"+ tempname +"'>A."+ jsons['2']['A3'][i].list[j].a +"</label><br><label class='radio-inline'><input type='radio' "+ bb +"value='B' name='"+ tempname +"'>B."+ jsons['2']['A3'][i].list[j].b +"</label><br><label class='radio-inline'><input type='radio' "+ cc +"value='C' name='"+ tempname +"'>C."+ jsons['2']['A3'][i].list[j].c +"</label><br><label class='radio-inline'><input type='radio' "+ dd +"value='D' name='"+ tempname +"'>D."+ jsons['2']['A3'][i].list[j].d +"</label><br><label class='radio-inline'><input type='radio' "+ ee +"value='E' name='"+ tempname +"'>E."+ jsons['2']['A3'][i].list[j].e +"</label></div><br><br>";
+    n2=n2+1;
+  }
+  R_title+="</div></div></div></div></div>";
+  //右边题目渲染结束
+  //左边菜单栏渲染 #ios
+  var tempsign2="";
+  if(jsonl['upanswer'][n1-1].mark==1)
+    tempsign2="?";
+  else if(jsonl['upanswer'][n1-1].mark==0)
+    tempsign2="";
+  else
+    tempsign2="@";
+  R_A3+="<a id='IIT-"+ n1 +"' href='#"+ jsons['2']['A3'][i].label +"' class='navs navs-menu2' data-toggle='tab'>"+ jsons['2']['A3'][i].label +"&nbsp;<span id='S-"+ n1 +"' style='color: red'>"+ tempsign1 +"</span><span id='A-"+ n1 +"'  style='color: red'>"+ tempsign2 +"</span></a>";
+  n1=n1+1;
+  //左边菜单栏渲染结束
+}
+//2-A3题目渲染结束
+
+//集中渲染开始
+var mysubject1="";
+var mysubject2="";
+if(jsons['1'].subject==1)
+{
+  document.getElementById("myhome").innerHTML="基础科目";
+  mysubject1="基础科目";
+}
+if(jsons['1'].subject==2)
+{
+  document.getElementById("myhome").innerHTML="预防科目";
+  mysubject1="预防科目";
+}
+if(jsons['1'].subject==3)
+{
+  document.getElementById("myhome").innerHTML="临床科目";
+  mysubject1="临床科目";
+}
+if(jsons['1'].subject==4)
+{
+  document.getElementById("myhome").innerHTML="综合科目";
+  mysubject1="综合科目";
+}
+if(jsons['2'].subject==1)
+{
+  document.getElementById("myios").innerHTML="基础科目";
+  mysubject2="基础科目";
+}
+if(jsons['2'].subject==2)
+{
+  document.getElementById("myios").innerHTML="预防科目";
+  mysubject2="预防科目";
+}
+if(jsons['2'].subject==3)
+{
+  document.getElementById("myios").innerHTML="临床科目";
+  mysubject2="临床科目";
+}
+if(jsons['2'].subject==4)
+{
+  document.getElementById("myhome").innerHTML="综合科目";
+  mysubject2="综合科目";
+}
+
+function setCookie(name,value)
+{
+
+document.cookie=name+ "=" +escape(value);
+
+}
+setCookie("titlenum",n2,12)
+
+document.getElementById("notPaperCount").innerHTML=n3;
+document.getElementById("completePaperCount").innerHTML=n2-n3-1;
+document.getElementById("subjectName").innerHTML=mysubject1+"&"+mysubject2;
+document.getElementById("A11").innerHTML=L_A1;
+document.getElementById("B11").innerHTML=L_B1;
+document.getElementById("A21").innerHTML=L_A2;
+document.getElementById("A31").innerHTML=L_A3;
+document.getElementById("A12").innerHTML=R_A1;
+document.getElementById("B12").innerHTML=R_B1;
+document.getElementById("A22").innerHTML=R_A2;
+document.getElementById("A32").innerHTML=R_A3;
+document.getElementById("mytitle").innerHTML=R_title;
+//集中渲染结束
+
+//动态渲染结束
+//功能实现开始
+var index=1;
+var indexleft =1; // 左边的flag
+//var index1=indexleft-1;//这个变量没有用上
+var index2=indexright;
+console.log(getCookie("timelong"));
+{#jsons.timelong = n2 * 2*60*60 / 200 + parseInt(getCookie("timeStart")) - Math.round(new Date() / 1000);#}
+{#console.log(jsons.timelong);#}
+        jsons.timelong=parseInt(getCookie("timelong"));
+        console.log(jsons.timelong);
+var h=parseInt(jsons.timelong/3600);
+h = h < 10? "0"+h:h;
+var m=parseInt((jsons.timelong%3600)/60);
+m = m < 10? "0"+m:m;
+var s=jsons.timelong%60;
+s = s < 10? "0"+s:s;
+var t;
+function displayTime(timeLeft)
+{
+
+  if(s==0)
+  {
+     s=60;
+     m--;
+   }
+   s--;
+  if(m==0&&s==0)
+  {
+    if(h==0)
+    {
+      for(var i=0;i<n1-1;i++)   //判断得分情况
+      {
+        if(typeof(jsonl['upanswer'][i].answer)!="undefined")
+         {
+           if(jsonl['upanswer'][i].answer==jsonl['upanswer'][i].coranswer)    //写入本地json
+              n4++;
+         }
+         else{
+           for(var j=0;j<jsonl['upanswer'][i].list.length;j++)
+           {
+             if(jsonl['upanswer'][i].list[j].answer==jsonl['upanswer'][i].list[j].coranswer)
+                n4++;
+           }
+         }
+      }
+      /*$.ajax({
+						url : 'index_1html',
+						data : jsonl,
+						dataType : 'json',
+						type : 'post',
+						isBlock:false,
+						success : function(data)
+						{
+                console.log("后台接收成功！");
+						},
+						fail :function(data){
+							$.showToast("请求失败，请检测网络");
+						}
+					});*/
+     jsonl.grade1=n4;
+     jsonl.grade2=n2-1;
+     localStorage.removeItem("data2");//data2更换
+     c=JSON.stringify(jsonl);
+     localStorage.setItem("data2",c);        //将json存放到localstorge
+     window.location.href="mygrade.html";
+     }
+     m=60;
+     h--;
+  }
+   t=h+":"+m+":"+s;  
+   document.getElementById("clock").innerHTML=t;  
+}
+//判断第一题的状态开始
+if(jsonl['upanswer'][0].mark==1)  //必须用.prop设置选中与否  用.attr 会出现已经选中但是画面显示不出来选中状态的情况
+    {
+      $(":checkbox").prop("checked",true);
+    }
+    if(jsonl['upanswer'][0].mark==0)
+    {
+      $(":checkbox").prop("checked",false);
+    }
+//判断第一题的状态结束
+$(document).ready(function(){
+    // 左边的menu
+    $(".navs-menu").click(function(){
+    $('.navs-menu').removeClass('active'); // 移除类名
+    $(this).addClass('active'); // 加类名
+    var id = $(this).attr("id"); //获得id
+    indexleft = id.substring(4);  //获得id
+    index=parseInt(indexleft);    //记录现在正active的id
+    //是否标记
+    if(jsonl['upanswer'][indexleft-1].mark==1)  //必须用.prop设置选中与否  用.attr 会出现已经选中但是画面显示不出来选中状态的情况
+    {
+      $(":checkbox").prop("checked",true);
+    }
+    if(jsonl['upanswer'][indexleft-1].mark==0)
+    {
+      $(":checkbox").prop("checked",false);
+    }
+    var temptitle=$("#"+id).parent().attr('id');  //获取父亲id
+    if(temptitle=="A11")
+    {
+      document.getElementById("littletitle").innerHTML=mysubject1+" &gt;&gt; A1题型";
+    }
+    if(temptitle=="B11")
+    {
+      document.getElementById("littletitle").innerHTML=mysubject1+" &gt;&gt; B1题型";
+    }
+    if(temptitle=="A21")
+    {
+      document.getElementById("littletitle").innerHTML=mysubject1+" &gt;&gt; A2题型";
+    }
+    if(temptitle=="A31")
+    {
+      document.getElementById("littletitle").innerHTML=mysubject1+" &gt;&gt; A3/4题型";
+    }
+
+  });
+    // 右边的menu点击
+    $(".navs-menu2").click(function(){
+    $('.navs-menu2').removeClass('active'); // 移除类名
+    $(this).addClass('active'); // 加类名
+    var id = $(this).attr("id"); //获得id
+    indexright = id.substring(4);//获得id
+    index=parseInt(indexright); //记录现在正active的id
+    //添加标记
+    if(jsonl['upanswer'][indexright-1].mark==1)   //必须用.prop设置选中与否  用.attr 会出现已经选中但是画面显示不出来选中状态的情况
+    {
+      $(":checkbox").prop("checked",true);
+    }
+    if(jsonl['upanswer'][indexright-1].mark==0)
+    {
+      $(":checkbox").prop("checked",false);
+    }
+    var temptitle=$("#"+id).parent().attr('id');  //获取父亲id
+    if(temptitle=="A12")
+    {
+      document.getElementById("littletitle").innerHTML=mysubject2+" &gt;&gt; A1题型";
+    }
+    if(temptitle=="B12")
+    {
+      document.getElementById("littletitle").innerHTML=mysubject2+" &gt;&gt; B1题型";
+    }
+    if(temptitle=="A22")
+    {
+      document.getElementById("littletitle").innerHTML=mysubject2+" &gt;&gt; A2题型";
+    }
+    if(temptitle=="A32")
+    {
+      document.getElementById("littletitle").innerHTML=mysubject2+" &gt;&gt; A3题型";
+    }
+  });
+
+   $('.kemu-tab').click(function(){
+    var tag = $(this).attr('href');
+    if(tag == '#ios'){
+      var tempid = ("IIT-" + indexright);
+      $('#' + tempid).click();
+    }
+    else{
+      var tempid = ("IIT-" + indexleft);
+      $('#' + tempid).click();
+    }
+      });
+ // 点击上一题
+ $("#prevbtn").click(function(){
+    var tempindex=index-1;
+    if(tempindex==index2-1)
+    $('#myhome').click();
+    if(tempindex==0)
+    tempindex=1;
+    var tempid = ("IIT-" + tempindex);
+    $('#' + tempid).click();
+  });
+// 点击下一题
+$("#nextbtn").click(function(){
+    var tempindex=index+1;
+    if(tempindex==index2)
+    $('#myios').click();
+    if(tempindex==n1)
+    tempindex=n1-1;
+    var tempid = ("IIT-" + tempindex);
+    $('#' + tempid).click();
+  });
+
+// 点击标记
+$(":checkbox").click(function(){
+    var tempindex=index;
+    var tempid = ("A-" + tempindex);
+    if(document.getElementById("mark").checked==true)
+    {
+      document.getElementById(tempid).innerHTML="?";
+      jsonl['upanswer'][tempindex-1].mark=1;
+    }
+    else
+    {
+      document.getElementById(tempid).innerHTML="";
+      jsonl['upanswer'][tempindex-1].mark=0;
+    }
+  });
+  // 点击选择按钮
+$(":radio").click(function(){
+    n3 =  n2 - $('input[type="radio"]:checked ').length - 1;
+    document.getElementById("notPaperCount").innerHTML= n3;
+    document.getElementById("completePaperCount").innerHTML= n2-n3-1;
+    var tempindex=index-1;
+    var tempflag=0;
+    var thisname=$(this).attr("name");  //获取name
+    var thisanswer=$(this).val();    //获取所选答案
+    var thisoffset=parseInt(thisname.substring(thisname.length-1,thisname.length));  //获取offset
+    if(typeof(jsonl['upanswer'][tempindex].answer)!="undefined")
+    {
+      jsonl['upanswer'][tempindex].answer=thisanswer;    //写入本地json
+      var tempid=("S-"+index);
+      document.getElementById(tempid).innerHTML="";
+    }
+    else
+    {
+      jsonl['upanswer'][tempindex].list[thisoffset-1].answer=thisanswer;    //写入本地json
+      for(var i=0;i<jsonl['upanswer'][tempindex].list.length;i++)  //遍历本地以储存的答案
+      {
+        if(jsonl['upanswer'][tempindex].list[i].answer=="")
+        {
+
+        tempflag=1;   //没答完
+        }
+      }
+      if(tempflag==0)  //如果答完
+      {
+        var tempid=("S-"+index);
+        document.getElementById(tempid).innerHTML="";
+      }
+    }
+  });
+  //点击交卷按钮
+  $("#submitbtn").click(function(){
+    if(n3!=0){
+      if(confirm("您还有"+ n3 +"道题未答，确定要提交答案吗？")==1){
+        for(var i=0;i<n1-1;i++)   //判断得分情况
+        {
+            if(typeof(jsonl['upanswer'][i].answer)!="undefined")
+             {
+               if(jsonl['upanswer'][i].answer==jsonl['upanswer'][i].coranswer)    //写入本地json
+                  n4++;
+             }
+            else{
+                for(var j=0;j<jsonl['upanswer'][i].list.length;j++){
+                     if(jsonl['upanswer'][i].list[j].answer==jsonl['upanswer'][i].list[j].coranswer)
+                        n4++;
+                   }
+         }
+        }
+      }
+    }else{
+      for(var i=0;i<n1-1;i++)   //判断得分情况
+      {
+        if(typeof(jsonl['upanswer'][i].answer)!="undefined")
+         {
+           if(jsonl['upanswer'][i].answer==jsonl['upanswer'][i].coranswer)    //写入本地json
+              n4++;
+         }
+         else{
+           for(var j=0;j<jsonl['upanswer'][i].list.length;j++)
+           {
+             if(jsonl['upanswer'][i].list[j].answer==jsonl['upanswer'][i].list[j].coranswer)
+                n4++;
+           }
+         }
+      }
+     }
+     jsonl.grade1=n4;
+     jsonl.grade2=n2-1;
+     localStorage.removeItem("data2");//data2更换
+     c=JSON.stringify(jsonl);
+     localStorage.setItem("data2",c);        //将json存放到localstorge
+     //跳转页面
+     window.location.href="/mygrade";//传参数
+  });
+  //离开页面相关时间
+    window.onbeforeunload = function() {
+    jsons.timelong=s+m*60+h*60*60;
+    d=JSON.stringify(jsons);           //json转为字符串
+    localStorage.clear();
+    localStorage.setItem("data1",d);        //将服务器传来的json存放到localstorge
+    c=JSON.stringify(jsonl);
+    localStorage.setItem("data2",c);        //将json存放到localstorge
+    };
+//每隔1秒调用一次displayTime函数
+ {#window.setInterval("displayTime()",1000);//单位是毫秒#}
+    var timeLeft = jsons.timelong;
+    // 计时器
+    intervalStartSell = setInterval(function(){ //倒计时
+                timeLeft --;
+                $("#clock").text(timeShow(timeLeft));
+                {#设置返回时间的文本内容#}
+                if(timeLeft <= 0){
+                    clearInterval(intervalStartSell);
+                     for(var i=0;i<n1-1;i++){   //判断得分情况
+                        if(typeof(jsonl['upanswer'][i].answer)!="undefined"){
+                            if(jsonl['upanswer'][i].answer==jsonl['upanswer'][i].coranswer)    //写入本地json
+                                n4++;
+                            }else{
+                                for(var j=0;j<jsonl['upanswer'][i].list.length;j++){
+                                    if(jsonl['upanswer'][i].list[j].answer==jsonl['upanswer'][i].list[j].coranswer)
+                                    n4++;
+                                }
+                            }
+                    }
+                    jsonl.grade1=n4;
+                    jsonl.grade2=n2-1;
+                    {#localStorage.removeItem("data2");//data2更换#}
+                    c=JSON.stringify(jsonl);
+                    localStorage.setItem("data2",c); //将json存放到localstorge
+                    {#window.location.href="/mygrade.html";//传参数#}
+                }
+             },1000);
+
+
+});
+}
+
+function initGrade() {
+    var json4=localStorage.getItem("data2"); //localstorage转为json使用
+    if( json4 == null){ // 如果没有成绩
+    {#if( true){ // 如果没有成绩#}
+         jsonl.examid = getCookie('id');
+         jsonl.grade1 = "";
+         jsonl.grade2 = "";
+         jsonl.id = getCookie('phone');
+         jsonl.upanswer = [];
+
+         for(var i = 0;i < jsons['1']['A1'].length; i ++){
+             var jsonTemp = {};
+             jsonTemp.id = jsons['1']['A1'][i].id;
+             jsonTemp.mark = 0;
+             jsonTemp.offset = jsons['1']['A1'][i].offset;
+             jsonTemp.coranswer = jsons['1']['A1'][i].right;
+             jsonTemp.answer = "";
+             jsonl.upanswer.push(jsonTemp);
+         }
+
+         //1-B1题目渲染开始
+         for(var i=0;i<jsons['1']['B1'].length;i++) {
+            var jsonTemp = {};
+            jsonTemp.id = jsons['1']['B1'][i].id;
+            jsonTemp.mark = 0;
+            jsonTemp.list = [];
+            for (var j = 0; j < jsons['1']['B1'][i].list.length; j++) {
+                var jsonTemp2 = {};
+                jsonTemp2.offset = jsons['1']['B1'][i].list[j].offset;
+                jsonTemp2.coranswer = jsons['1']['B1'][i].list[j].right;
+                jsonTemp2.answer = "";
+                jsonTemp.list.push(jsonTemp2);
+            }
+            jsonl.upanswer.push(jsonTemp);
+        }
+         for(var i = 0;i < jsons['1']['A2'].length; i ++){
+             var jsonTemp = {};
+             jsonTemp.id = jsons['1']['A2'][i].id;
+             jsonTemp.mark = 0;
+             jsonTemp.offset = jsons['1']['A2'][i].offset;
+             jsonTemp.coranswer = jsons['1']['A2'][i].right;
+             jsonTemp.answer = "";
+             jsonl.upanswer.push(jsonTemp);
+         }
+
+         for(var i=0;i<jsons['1']['A3'].length;i++) {
+             var jsonTemp = {};
+             jsonTemp.id = jsons['1']['A3'][i].id;
+             jsonTemp.mark = 0;
+             jsonTemp.list = [];
+             for (var j = 0; j < jsons['1']['A3'][i].list.length; j++){
+                var jsonTemp2 = {};
+                jsonTemp2.offset = jsons['1']['A3'][i].list[j].offset;
+                jsonTemp2.coranswer = jsons['1']['A3'][i].list[j].right;
+                jsonTemp2.answer = "";
+                jsonTemp.list.push(jsonTemp2);
+             }
+             jsonl.upanswer.push(jsonTemp);
+         }
+
+         for(var i = 0;i < jsons['2']['A1'].length; i ++){
+             var jsonTemp = {};
+             jsonTemp.id = jsons['2']['A1'][i].id;
+             jsonTemp.mark = 0;
+             jsonTemp.offset = jsons['2']['A1'][i].offset;
+             jsonTemp.coranswer = jsons['2']['A1'][i].right;
+             jsonTemp.answer = "";
+             jsonl.upanswer.push(jsonTemp);
+         }
+
+         //2-B1题目渲染开始
+         for(var i=0;i<jsons['2']['B1'].length;i++) {
+            var jsonTemp = {};
+            jsonTemp.id = jsons['2']['B1'][i].id;
+            jsonTemp.mark = 0;
+            jsonTemp.list = [];
+            for (var j = 0; j < jsons['2']['B1'][i].list.length; j++) {
+                var jsonTemp2 = {};
+                jsonTemp2.offset = jsons['2']['B1'][i].list[j].offset;
+                jsonTemp2.coranswer = jsons['2']['B1'][i].list[j].right;
+                jsonTemp2.answer = "";
+                jsonTemp.list.push(jsonTemp2);
+            }
+            jsonl.upanswer.push(jsonTemp);
+        }
+
+         for(var i = 0;i < jsons['2']['A2'].length; i ++){
+             var jsonTemp = {};
+             jsonTemp.id = jsons['2']['A2'][i].id;
+             jsonTemp.mark = 0;
+             jsonTemp.offset = jsons['2']['A2'][i].offset;
+             jsonTemp.coranswer = jsons['2']['A2'][i].right;
+             jsonTemp.answer = "";
+             jsonl.upanswer.push(jsonTemp);
+         }
+
+         for(var i=0;i<jsons['2']['A3'].length;i++) {
+             var jsonTemp = {};
+             jsonTemp.id = jsons['2']['A3'][i].id;
+             jsonTemp.mark = 0;
+             jsonTemp.list = [];
+             for (var j = 0; j < jsons['2']['A3'][i].list.length; j++){
+                var jsonTemp2 = {};
+                jsonTemp2.offset = jsons['2']['A3'][i].list[j].offset;
+                jsonTemp2.coranswer = jsons['2']['A3'][i].list[j].right;
+                jsonTemp2.answer = "";
+                jsonTemp.list.push(jsonTemp2);
+             }
+             jsonl.upanswer.push(jsonTemp);
+         }
+    }
+    else{
+        jsonl = JSON.parse(json4);
+    }
+}
+function timeShow(timeLeft) {
+        var second = Math.floor(timeLeft % 60);
+        var min = Math.floor((timeLeft / 60) % 60);
+        var hour = Math.floor((timeLeft / 3600) % 24);
+        second = second<10?("0"+second):second;
+        min = min<10?("0"+min):min;
+        hour = hour<10?("0"+hour):hour;
+        return hour+':'+min+':'+second;
+    }
+function getCookie(name) {
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg))
+        return unescape(arr[2]);
+    else
+        return null;
+}
+</script>
+<script>
+  // $(function () {
+  //   $('#main li:eq(0) a').tab('show');
+  // });
+</script>
